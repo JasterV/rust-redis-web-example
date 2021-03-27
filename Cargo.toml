@@ -1,0 +1,17 @@
+[package]
+name = "redis_test"
+version = "0.1.0"
+authors = ["Víctor Martínez <victorcoder2@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+redis = { version = "0.19.0", features = ["tokio-comp"] }
+tokio = { version = "1", features = ["full"] }
+warp = "0.3.0"
+r2d2_redis = "0.14.0"
+mobc-redis = "0.7.0"
+mobc = "0.7.0"
+thiserror = "1.0.24"
+r2d2 = "0.8.9"
